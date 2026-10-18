@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Zenith Corp. — Japanese technology and hardware engineering company specializing in wearable health-monitoring devices, precision sensing systems, and connected health technology." />
+  <title>Zenith Corp. | Health Technology &amp; Hardware Engineering</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Serif:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER / NAVIGATION
+  ============================================================ -->
+  <header class="site-header" id="top" role="banner">
+    <nav class="nav-container" aria-label="Main navigation">
+      <a href="#top" class="brand-logo" aria-label="Zenith Corp. — Home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <polygon points="16,2 30,28 2,28" fill="none" stroke="#4CAF80" stroke-width="2.2"/>
+            <line x1="16" y1="2" x2="16" y2="28" stroke="#4CAF80" stroke-width="1.2" opacity="0.5"/>
+            <line x1="2" y1="28" x2="30" y2="28" stroke="#4CAF80" stroke-width="1.2" opacity="0.5"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">ZENITH</span>
+          <span class="brand-sub">CORP.</span>
+        </span>
+      </a>
+
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <ul class="nav-links" id="navMenu" role="list">
+        <li><a href="#top" class="nav-link" id="nav-home">HOME</a></li>
+        <li><a href="#about" class="nav-link" id="nav-about">ABOUT US</a></li>
+        <li><a href="#products" class="nav-link" id="nav-products">PRODUCTS</a></li>
+        <li><a href="#technology" class="nav-link" id="nav-technology">TECHNOLOGY</a></li>
+        <li><a href="#updates" class="nav-link" id="nav-updates">UPDATES</a></li>
+        <li><a href="#contact" class="nav-link" id="nav-contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============================================================
+       HERO CAROUSEL
+  ============================================================ -->
+  <section class="hero-carousel" id="hero" aria-label="Homepage hero carousel" role="region">
+
+    <!-- SLIDE TRACK -->
+    <div class="carousel-track" id="carouselTrack">
+
+      <!-- SLIDE 1: OFFICIAL APOLOGY -->
+      <article class="carousel-slide slide-apology active" id="slide-1" aria-label="Slide 1 of 3: Official Apology">
+        <div class="slide-bg">
+          <img
+            src="assets/images/zenith-apology-team.png"
+            alt="Zenith Corp. leadership team performing a sincere collective bow as a formal corporate apology"
+            class="slide-bg-img"
+            id="apology-bg-img"
+          />
+          <div class="slide-overlay slide-overlay--apology"></div>
+        </div>
+        <div class="slide-content slide-content--split">
+          <div class="slide-image-panel" aria-hidden="true">
+            <!-- background image is the visual; this panel adds depth -->
+          </div>
+          <div class="slide-text-panel slide-text-panel--statement">
+            <span class="slide-eyebrow">OFFICIAL STATEMENT</span>
+            <h1 class="slide-heading">OUR SINCERE<br>APOLOGY</h1>
+            <p class="slide-subheading">Regarding the Aura Health Data Breach Incident</p>
+            <p class="slide-body">
+              We deeply apologize to our users and partners for the exposure of sensitive personal information associated with the Aura Health platform. We recognize the seriousness of this incident and the trust that has been placed in us.
+            </p>
+            <a href="#official-statement" class="btn btn--primary btn--apology" id="hero-read-statement-btn">READ OUR STATEMENT</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- SLIDE 2: HEALTH TECHNOLOGY -->
+      <article class="carousel-slide slide-health" id="slide-2" aria-label="Slide 2 of 3: Health Technology" aria-hidden="true">
+        <div class="slide-bg">
+          <img
+            src="assets/images/zenith-health-hardware.png"
+            alt="Precision-engineered wearable health-monitoring hardware and biometric sensing devices"
+            class="slide-bg-img"
+          />
+          <div class="slide-overlay slide-overlay--standard"></div>
+        </div>
+        <div class="slide-content slide-content--center">
+          <div class="slide-text-panel slide-text-panel--standard">
+            <span class="slide-eyebrow">ZENITH CORP. TECHNOLOGY</span>
+            <h2 class="slide-heading">ENGINEERING A<br>HEALTHIER FUTURE</h2>
+            <p class="slide-body">
+              We develop precision-engineered hardware and wearable technology designed to support connected health-monitoring experiences.
+            </p>
+            <a href="#products" class="btn btn--primary" id="hero-explore-tech-btn">EXPLORE OUR TECHNOLOGY</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- SLIDE 3: ENGINEERING -->
+      <article class="carousel-slide slide-engineering" id="slide-3" aria-label="Slide 3 of 3: Engineering and Innovation" aria-hidden="true">
+        <div class="slide-bg">
+          <img
+            src="assets/images/zenith-engineering.jpg"
+            alt="Engineers working in a precision electronics hardware development laboratory"
+            class="slide-bg-img"
+          />
+          <div class="slide-overlay slide-overlay--standard"></div>
+        </div>
+        <div class="slide-content slide-content--center">
+          <div class="slide-text-panel slide-text-panel--standard">
+            <span class="slide-eyebrow">OUR ENGINEERING APPROACH</span>
+            <h2 class="slide-heading">PRECISION IN<br>EVERY DETAIL</h2>
+            <p class="slide-body">
+              From compact electronic hardware to integrated sensing systems, Zenith Corp. brings engineering discipline to the next generation of connected technology.
+            </p>
+            <a href="#about" class="btn btn--primary" id="hero-about-btn">ABOUT ZENITH</a>
+          </div>
+        </div>
+      </article>
+
+    </div><!-- /.carousel-track -->
+
+    <!-- CAROUSEL CONTROLS -->
+    <button class="carousel-arrow carousel-arrow--prev" id="carouselPrev" aria-label="Previous slide" type="button">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <polyline points="15,18 9,12 15,6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <button class="carousel-arrow carousel-arrow--next" id="carouselNext" aria-label="Next slide" type="button">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <polyline points="9,18 15,12 9,6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <!-- SLIDE DOTS -->
+    <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Slide indicators">
+      <button class="dot dot--active" id="dot-1" role="tab" aria-selected="true" aria-label="Go to slide 1: Official Apology" data-slide="0" type="button"></button>
+      <button class="dot" id="dot-2" role="tab" aria-selected="false" aria-label="Go to slide 2: Health Technology" data-slide="1" type="button"></button>
+      <button class="dot" id="dot-3" role="tab" aria-selected="false" aria-label="Go to slide 3: Engineering" data-slide="2" type="button"></button>
+    </div>
+
+  </section><!-- /.hero-carousel -->
+
+  <!-- ============================================================
+       MAIN CONTENT
+  ============================================================ -->
+  <main id="main-content">
+
+    <!-- ============================================================
+         ABOUT ZENITH SECTION
+    ============================================================ -->
+    <section class="section section--about" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <span class="section-eyebrow">WHO WE ARE</span>
+            <h2 class="section-heading" id="about-heading">WE ARE ZENITH</h2>
+            <div class="divider" aria-hidden="true"></div>
+            <p class="body-text">
+              Zenith Corp. is a Japanese technology and hardware engineering company focused on wearable technology, health-monitoring hardware, and connected sensing solutions.
+            </p>
+            <p class="body-text">
+              We combine engineering precision with a commitment to thoughtful product development. Our work centers on building reliable hardware that supports modern connected experiences.
+            </p>
+            <p class="body-text">
+              We believe technology should be designed with responsibility, transparency, and respect for the people who use it.
+            </p>
+          </div>
+          <div class="about-visual" aria-hidden="true">
+            <div class="about-accent-card">
+              <div class="accent-icon">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                  <circle cx="20" cy="20" r="18" stroke="#174B3A" stroke-width="1.5"/>
+                  <path d="M12 20 L18 26 L28 14" stroke="#174B3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h3 class="accent-title">Engineering Trust</h3>
+              <p class="accent-body">Every product and partner relationship is built on a foundation of technical integrity and human responsibility.</p>
+            </div>
+            <div class="about-accent-card">
+              <div class="accent-icon">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                  <rect x="8" y="8" width="24" height="24" rx="2" stroke="#174B3A" stroke-width="1.5"/>
+                  <path d="M14 20 h12 M20 14 v12" stroke="#174B3A" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <h3 class="accent-title">Connected Innovation</h3>
+              <p class="accent-body">We develop hardware that bridges precision sensor technology with modern connected health platforms.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PRODUCTS SECTION
+    ============================================================ -->
+    <section class="section section--products section--alt" id="products" aria-labelledby="products-heading">
+      <div class="container">
+        <span class="section-eyebrow section-eyebrow--center">WHAT WE BUILD</span>
+        <h2 class="section-heading section-heading--center" id="products-heading">OUR TECHNOLOGY &amp; SOLUTIONS</h2>
+        <div class="divider divider--center" aria-hidden="true"></div>
+        <p class="section-intro">
+          Our hardware and engineering solutions are designed around connected health monitoring, wearable device development, and precision sensor integration.
+        </p>
+
+        <div class="products-grid">
+
+          <article class="product-card" id="product-wearable">
+            <div class="product-card-icon" aria-hidden="true">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <rect x="10" y="14" width="28" height="20" rx="4" stroke="#174B3A" stroke-width="2"/>
+                <rect x="18" y="8" width="12" height="6" rx="2" stroke="#174B3A" stroke-width="1.5"/>
+                <rect x="18" y="34" width="12" height="6" rx="2" stroke="#174B3A" stroke-width="1.5"/>
+                <circle cx="24" cy="24" r="4" stroke="#174B3A" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3 class="product-card-title">Wearable Hardware</h3>
+            <p class="product-card-desc">Hardware foundations for wearable devices designed to support connected health-monitoring experiences.</p>
+            <span class="product-card-tag">Health Wearables</span>
+          </article>
+
+          <article class="product-card" id="product-sensing">
+            <div class="product-card-icon" aria-hidden="true">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="8" stroke="#174B3A" stroke-width="2"/>
+                <circle cx="24" cy="24" r="14" stroke="#174B3A" stroke-width="1.5" stroke-dasharray="3 3"/>
+                <circle cx="24" cy="24" r="20" stroke="#174B3A" stroke-width="1" stroke-dasharray="2 4" opacity="0.5"/>
+                <circle cx="24" cy="24" r="2.5" fill="#174B3A"/>
+              </svg>
+            </div>
+            <h3 class="product-card-title">Precision Sensing Systems</h3>
+            <p class="product-card-desc">Compact electronic sensing components built to support the integration of data-driven features into connected devices.</p>
+            <span class="product-card-tag">Sensor Engineering</span>
+          </article>
+
+          <article class="product-card" id="product-connected">
+            <div class="product-card-icon" aria-hidden="true">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <rect x="6" y="18" width="14" height="12" rx="2" stroke="#174B3A" stroke-width="1.8"/>
+                <rect x="28" y="18" width="14" height="12" rx="2" stroke="#174B3A" stroke-width="1.8"/>
+                <line x1="20" y1="24" x2="28" y2="24" stroke="#174B3A" stroke-width="1.8" stroke-linecap="round"/>
+                <circle cx="24" cy="24" r="2" fill="#174B3A"/>
+                <line x1="13" y1="14" x2="13" y2="18" stroke="#174B3A" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="35" y1="14" x2="35" y2="18" stroke="#174B3A" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="product-card-title">Connected Device Engineering</h3>
+            <p class="product-card-desc">Hardware engineering capabilities that help technology partners develop and integrate connected electronic products.</p>
+            <span class="product-card-tag">Partner Solutions</span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ENGINEERING / VALUES SECTION
+    ============================================================ -->
+    <section class="section section--technology" id="technology" aria-labelledby="tech-heading">
+      <div class="tech-bg-image" aria-hidden="true">
+        <img src="assets/images/zenith-engineering.jpg" alt="" class="tech-bg-img" />
+        <div class="tech-overlay"></div>
+      </div>
+      <div class="container tech-content">
+        <span class="section-eyebrow section-eyebrow--light">HOW WE WORK</span>
+        <h2 class="section-heading section-heading--light" id="tech-heading">ENGINEERED<br>WITH PURPOSE</h2>
+        <div class="divider divider--light" aria-hidden="true"></div>
+
+        <div class="values-grid">
+          <div class="value-item">
+            <div class="value-number" aria-hidden="true">01</div>
+            <h3 class="value-title">Precision Engineering</h3>
+            <p class="value-desc">We apply rigorous engineering standards at every stage — from initial circuit design to final product integration.</p>
+          </div>
+          <div class="value-item">
+            <div class="value-number" aria-hidden="true">02</div>
+            <h3 class="value-title">Responsible Innovation</h3>
+            <p class="value-desc">We take seriously our responsibility to handle user data and technology partnerships with care and transparency.</p>
+          </div>
+          <div class="value-item">
+            <div class="value-number" aria-hidden="true">03</div>
+            <h3 class="value-title">Hardware Reliability</h3>
+            <p class="value-desc">Our sensing and wearable systems are designed to function consistently and accurately under real-world conditions.</p>
+          </div>
+          <div class="value-item">
+            <div class="value-number" aria-hidden="true">04</div>
+            <h3 class="value-title">User-Centered Technology</h3>
+            <p class="value-desc">We build with the people who use our technology in mind — their safety, experience, and trust matter to our engineering decisions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         OFFICIAL APOLOGY STATEMENT SECTION
+    ============================================================ -->
+    <section class="section section--statement" id="official-statement" aria-labelledby="statement-heading">
+      <div class="container">
+        <div class="statement-wrapper">
+          <div class="statement-label">OFFICIAL ANNOUNCEMENT</div>
+          <h2 class="statement-heading" id="statement-heading">Our Deepest Apologies Regarding the Data Breach Incident</h2>
+          <div class="statement-divider" aria-hidden="true"></div>
+
+          <div class="statement-body" role="article" aria-label="Official apology statement from Zenith Corp.">
+            <p>Dear Zenith Corp. users and partners,</p>
+
+            <p>We at Zenith Corp. offer our deepest apologies for the exposure of sensitive personal information associated with our partner platform, Aura Health. We understand the distress and loss of security this incident has caused.</p>
+
+            <p>As a company that values trust and customer safety, we regard this incident as a serious failure. Personal data is deeply private, and we recognize that this incident has undermined the trust you placed in us. We sincerely regret the impact this has had on our users and partners.</p>
+
+            <p>We take this matter seriously. Our leadership and technical teams are working with Aura Health to investigate the incident, address the security vulnerability, and strengthen data protection measures. We recognize our responsibility to help restore confidence through meaningful action, not words alone.</p>
+
+            <p>We are committed to communicating transparently and sharing further updates as our investigation progresses and verified information becomes available. If you have immediate concerns or require assistance, please contact our support team at <a href="mailto:zenithcorp@gmail.com" class="statement-email-link" id="statement-email">zenithcorp@gmail.com</a>.</p>
+
+            <p>Once again, we sincerely apologize for the distress this incident has caused. We remain committed to learning from this failure, improving our practices, and working to rebuild your trust.</p>
+
+            <div class="statement-closing">
+              <p class="closing-sign">Sincerely,</p>
+              <p class="closing-company">Zenith Corp.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         UPDATES SECTION
+    ============================================================ -->
+    <section class="section section--updates section--alt" id="updates" aria-labelledby="updates-heading">
+      <div class="container">
+        <span class="section-eyebrow section-eyebrow--center">NEWS &amp; COMMUNICATIONS</span>
+        <h2 class="section-heading section-heading--center" id="updates-heading">UPDATES</h2>
+        <div class="divider divider--center" aria-hidden="true"></div>
+
+        <div class="updates-notice" role="note" aria-label="Updates availability notice">
+          <div class="updates-notice-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <circle cx="14" cy="14" r="12" stroke="#174B3A" stroke-width="1.8"/>
+              <line x1="14" y1="9" x2="14" y2="15" stroke="#174B3A" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="14" cy="19" r="1.2" fill="#174B3A"/>
+            </svg>
+          </div>
+          <div class="updates-notice-text">
+            <p>We are committed to sharing verified information as our review progresses. Please refer to our <a href="#official-statement" class="inline-link" id="updates-statement-link">official statement</a> for our current communication regarding the Aura Health incident.</p>
+            <p>Further updates will be published here as confirmed information becomes available. We appreciate your continued patience.</p>
+          </div>
+        </div>
+
+        <div class="updates-grid">
+          <article class="update-card" id="update-1">
+            <div class="update-card-date">Current</div>
+            <h3 class="update-card-title">Official Statement on the Aura Health Data Breach</h3>
+            <p class="update-card-desc">Zenith Corp. has issued a formal public statement acknowledging the data breach incident involving the Aura Health platform and outlining its initial response.</p>
+            <a href="#official-statement" class="update-card-link" id="update-read-statement">Read Statement →</a>
+          </article>
+          <article class="update-card" id="update-2">
+            <div class="update-card-date">Ongoing</div>
+            <h3 class="update-card-title">Investigation in Progress</h3>
+            <p class="update-card-desc">Our technical and leadership teams are actively working with Aura Health to investigate the scope of the incident. We will share further information as our review is completed.</p>
+            <a href="mailto:zenithcorp@gmail.com" class="update-card-link" id="update-contact-link">Contact Support →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT SECTION
+    ============================================================ -->
+    <section class="section section--contact" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <span class="section-eyebrow section-eyebrow--center">GET IN TOUCH</span>
+        <h2 class="section-heading section-heading--center" id="contact-heading">CONTACT</h2>
+        <div class="divider divider--center" aria-hidden="true"></div>
+        <p class="section-intro">
+          For all inquiries, please reach us at <a href="mailto:zenithcorp@gmail.com" class="inline-link" id="contact-email-main">zenithcorp@gmail.com</a>. Our team will respond as promptly as possible.
+        </p>
+
+        <div class="contact-grid">
+          <div class="contact-card" id="contact-general">
+            <div class="contact-card-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <rect x="4" y="8" width="24" height="18" rx="2" stroke="#174B3A" stroke-width="1.8"/>
+                <path d="M4 12 L16 20 L28 12" stroke="#174B3A" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="contact-card-title">General Inquiries</h3>
+            <p class="contact-card-desc">Business inquiries, media, and general correspondence.</p>
+            <a href="mailto:zenithcorp@gmail.com" class="contact-card-email" id="contact-general-email">zenithcorp@gmail.com</a>
+          </div>
+
+          <div class="contact-card" id="contact-technology">
+            <div class="contact-card-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <rect x="4" y="6" width="24" height="18" rx="2" stroke="#174B3A" stroke-width="1.8"/>
+                <path d="M10 26 L22 26" stroke="#174B3A" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M16 24 L16 26" stroke="#174B3A" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M10 14 L14 11 L10 8" stroke="#174B3A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="14" y1="14" x2="22" y2="14" stroke="#174B3A" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="contact-card-title">Technology &amp; Partnerships</h3>
+            <p class="contact-card-desc">Hardware engineering collaborations and technology partnership inquiries.</p>
+            <a href="mailto:zenithcorp@gmail.com" class="contact-card-email" id="contact-tech-email">zenithcorp@gmail.com</a>
+          </div>
+
+          <div class="contact-card contact-card--urgent" id="contact-incident">
+            <div class="contact-card-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M16 4 L28 26 L4 26 Z" stroke="#174B3A" stroke-width="1.8" stroke-linejoin="round"/>
+                <line x1="16" y1="14" x2="16" y2="20" stroke="#174B3A" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="16" cy="23" r="1.2" fill="#174B3A"/>
+              </svg>
+            </div>
+            <h3 class="contact-card-title">Incident-Related Concerns</h3>
+            <p class="contact-card-desc">If you have concerns related to the Aura Health data breach, please contact our support team directly.</p>
+            <a href="mailto:zenithcorp@gmail.com" class="contact-card-email" id="contact-incident-email">zenithcorp@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="#top" class="footer-logo-link" aria-label="Zenith Corp. — Back to top">
+            <span class="footer-brand-mark" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+                <polygon points="16,2 30,28 2,28" fill="none" stroke="#4CAF80" stroke-width="2.2"/>
+                <line x1="16" y1="2" x2="16" y2="28" stroke="#4CAF80" stroke-width="1.2" opacity="0.5"/>
+              </svg>
+            </span>
+            <span class="footer-brand-text">
+              <span class="footer-brand-name">ZENITH</span>
+              <span class="footer-brand-sub">CORP.</span>
+            </span>
+          </a>
+          <p class="footer-desc">
+            Zenith Corp. is a Japanese technology and hardware engineering company specializing in wearable health-monitoring systems, precision sensing hardware, and connected device engineering.
+          </p>
+          <a href="mailto:zenithcorp@gmail.com" class="footer-email" id="footer-email-link">zenithcorp@gmail.com</a>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <h4 class="footer-nav-title">Company</h4>
+          <ul class="footer-nav-list" role="list">
+            <li><a href="#about" class="footer-nav-link" id="footer-about">About Us</a></li>
+            <li><a href="#products" class="footer-nav-link" id="footer-products">Products</a></li>
+            <li><a href="#technology" class="footer-nav-link" id="footer-tech">Technology</a></li>
+            <li><a href="#updates" class="footer-nav-link" id="footer-updates">Updates</a></li>
+            <li><a href="#contact" class="footer-nav-link" id="footer-contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-nav" aria-label="Footer statement links">
+          <h4 class="footer-nav-title">Important</h4>
+          <ul class="footer-nav-list" role="list">
+            <li><a href="#official-statement" class="footer-nav-link footer-nav-link--highlight" id="footer-statement">Official Apology Statement</a></li>
+            <li><a href="#updates" class="footer-nav-link" id="footer-updates-2">Latest Updates</a></li>
+            <li><a href="mailto:zenithcorp@gmail.com" class="footer-nav-link" id="footer-email">Contact Support</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          &copy; <span id="copyright-year"></span> Zenith Corp. All rights reserved. Zenith Corp. is a fictional company created for educational purposes.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
